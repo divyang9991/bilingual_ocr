@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import easyocr
 import os
+import cv2
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
@@ -25,10 +26,17 @@ def upload_image():
     # Save the uploaded file
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
     file.save(file_path)
+    
+    image = cv2.imread(file_path)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # EasyOCR expects RGB
+
+    # Preprocess (optional: enhance image quality)
+    gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    denoised = cv2.fastNlMeansDenoising(gray, h=10)  # Reduce noise
 
     # Perform OCR
     try:
-        result = reader.readtext(file_path, detail=0)
+        result = reader.readtext(denoised, detail=0)
         extracted_text = " ".join(result)  # Combine lines into a single string
         return jsonify({'text': extracted_text})
     except Exception as e:

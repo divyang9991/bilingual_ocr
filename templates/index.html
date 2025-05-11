@@ -6,18 +6,44 @@
     <title>OCR Web App</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Montserrat:ital,wght@0,900;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Questrial&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'language-options');
+        }
+    </script>
+        
+        <nav class="navbar">
+            <div class="logo">OCR App</div>
+            <a class="nav-links" href="#">Home</a>
+            <a class="nav-links" href="#">Contact</a>
+            <a class="nav-links" href="#">About</a>
+            <div class="auth">
+                <a href="static/login and signup page.html" id="authButton" class="button">Login/Sign-up</a>
+                <img src="/static/profile-icon.png" alt="Profile" id="profileIcon" class="hidden">
+            </div>
+        </nav>
+        <div id="google_translate_element"><p id="language-options"></p></div>
+    <div id="main">
     <div class="container">
         <h1>OCR Text Extraction</h1>
         <p>Upload an image to extract text:</p>
         <form id="uploadForm">
             <input type="file" id="fileInput" name="file" accept="image/*" required>
-            <button type="submit">Upload</button>
+            <button type="submit" class="button_style2">Upload</button>
         </form>
         <div id="result">
             <h2>Extracted Text:</h2>
             <pre id="extractedText"></pre>
+        </div>
+        <div id="detect-buttons">
+            <button class="button_style2">Detect English<span></span></button>
+            <button class="button_style2">Detect Gujarati</button>
         </div>
     </div>
 
@@ -52,6 +78,71 @@
                 extractedText.textContent = `Error: ${error.message}`;
             }
         });
-    </script>
+
+        </script>
+    </div>
+    <h1 class="heading">Home</h1>
+    <div class="main">
+        <img class="team_img" src="static\uploads\Screenshot 2025-05-10 113357.png" alt="">
+        <p id="main_info">Welcome to our OCR Text Extraction platform — your reliable partner in turning images, scanned documents, and handwritten notes into editable, searchable text. In today’s fast-paced digital world, manually typing content from physical documents is not only time-consuming but also error-prone. That’s where our tool steps in. Powered by advanced Optical Character Recognition (OCR) technology, this platform is designed to make text extraction simple, accurate, and accessible for everyone — whether you're a student looking to digitize lecture notes, a researcher analyzing archival material, a professional processing forms, or just someone needing to extract text from an image quickly.</p>
+    </div>
+    <div class="main">
+        <p id="main_info">With support for multiple file types including JPEG, PNG, and PDF, our system handles a wide range of documents — from printed pages to handwritten inputs — and delivers clean, copy-ready text in seconds. The interface is intuitive: just upload your file, and the tool automatically processes and displays the extracted text for you to review, copy, or download. Behind the scenes, we ensure your data is handled securely and efficiently, so you can focus on what matters without worrying about privacy or performance.
+
+Whether you're working from a desktop, tablet, or mobile device, our platform adapts to your workflow. No technical knowledge is required — just drag, drop, and let the OCR engine do the work. We’re continually improving our accuracy and language support to give you the best possible results every time. Start using OCR Text Extraction today and experience the ease of turning any physical text into digital content — effortlessly.</p>
+        <img class="team_img" src="static\uploads\Screenshot 2025-05-10 113406.png" alt="Jane">
+    </div>
+
+    <h1 class="heading">Meet Our Team</h1>
+    <div class="row">
+        <div class="column">
+            <div class="img-div">
+                <img class="team_img" src="static\uploads\145857007_307ce493-b254-4b2d-8ba4-d12c080d6651.jpg" alt="Divyang">
+            </div>
+            <div class="card">
+                <h2>Divyang Tomar</h2>
+                <p class="title">Team Head</p>
+                <p>Passionate learner</p>
+                <p>tomardivyang@gmail.com</p>
+                <p><button class="button_style2">Contact</button></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="img-div">
+                <img class="team_img" src="static\uploads\145857007_307ce493-b254-4b2d-8ba4-d12c080d6651.jpg" alt="Kishan">
+            </div>
+            <div class="card">
+                <h2>Kishan Patel</h2>
+                <p class="title">Curious Team member</p>
+                <p>Passionate learner</p>
+                <p>kdp24105@gmail.com</p>
+                <p><button class="button_style2">Contact</button></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="img-div">
+                <img class="team_img" src="static\uploads\145857007_307ce493-b254-4b2d-8ba4-d12c080d6651.jpg" alt="Pruthviraj">
+            </div>
+            <div class="card">
+                <h2>Pruthviraj Pasee</h2>
+                <p class="title">Curious Team member</p>
+                <p>Passionate learner</p>
+                <p>pruthvirajpasi676@gmail.com</p>
+                <p><button class="button_style2">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <ul id="contact-grid">
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+        </ul>
+        <div id="copyright">
+            <p>&copy; 2025 OCR App</p>
+        </div>
+    </footer>
 </body>
 </html>
