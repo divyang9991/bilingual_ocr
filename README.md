@@ -65,6 +65,7 @@ The system combines **Tesseract OCR** and **EasyOCR**, enhanced through image pr
 ```bash
 git clone https://github.com/divyang9991/bilingual_ocr.git
 cd bilingual_ocr
+```
 
 | Name                 | Role                          | LinkedIn                                                  |
 | -------------------- | ----------------------------- | --------------------------------------------------------- |
