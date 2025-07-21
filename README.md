@@ -67,6 +67,8 @@ git clone https://github.com/divyang9991/bilingual_ocr.git
 cd bilingual_ocr
 ```
 
+##  Team Members
+
 | Name                 | Role                          | LinkedIn                                                  |
 | -------------------- | ----------------------------- | --------------------------------------------------------- |
 | **Divyang Tomar**    | OCR & Preprocessing Lead      | [LinkedIn](https://www.linkedin.com/in/divyangtomar)      |
