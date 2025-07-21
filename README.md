@@ -73,5 +73,5 @@ cd bilingual_ocr
 | -------------------- | ----------------------------- | --------------------------------------------------------- |
 | **Divyang Tomar**    | OCR & Preprocessing Lead      | [Github](https://github.com/divyang9991)                  |
 | **Kishan Patel**     | EasyOCR Integration & Testing | [Github](https://github.com/kdp-dev-pa)                   |
-| **ruthviraj pasee**  | UI/UX & Deployment            | [Github](https://github.com/PruthvirajPasee0)             |
+| **Pruthviraj pasee** | UI/UX & Deployment            | [Github](https://github.com/PruthvirajPasee0)             |
 
