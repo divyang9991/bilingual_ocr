@@ -65,3 +65,10 @@ The system combines **Tesseract OCR** and **EasyOCR**, enhanced through image pr
 ```bash
 git clone https://github.com/divyang9991/bilingual_ocr.git
 cd bilingual_ocr
+
+| Name                 | Role                          | LinkedIn                                                  |
+| -------------------- | ----------------------------- | --------------------------------------------------------- |
+| **Divyang Tomar**    | OCR & Preprocessing Lead      | [LinkedIn](https://www.linkedin.com/in/divyangtomar)      |
+| **Kishan Patel**     | EasyOCR Integration & Testing | [LinkedIn](https://www.linkedin.com/in/kdp-dev-pa)        |
+| **ruthviraj pasee**  | UI/UX & Deployment            | [LinkedIn](https://www.linkedin.com/in/PruthvirajPasee0)))|
+
