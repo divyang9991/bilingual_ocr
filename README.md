@@ -71,5 +71,5 @@ cd bilingual_ocr
 | -------------------- | ----------------------------- | --------------------------------------------------------- |
 | **Divyang Tomar**    | OCR & Preprocessing Lead      | [LinkedIn](https://www.linkedin.com/in/divyangtomar)      |
 | **Kishan Patel**     | EasyOCR Integration & Testing | [LinkedIn](https://www.linkedin.com/in/kdp-dev-pa)        |
-| **ruthviraj pasee**  | UI/UX & Deployment            | [LinkedIn](https://www.linkedin.com/in/PruthvirajPasee0)))|
+| **ruthviraj pasee**  | UI/UX & Deployment            | [LinkedIn](https://www.linkedin.com/in/PruthvirajPasee0)  |
 
